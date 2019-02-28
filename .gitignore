@@ -1,0 +1,9 @@
+# redis
+redis-5.0.3
+
+# pychache
+__pycache__/
+
+# vscode
+.vscode/*
+.DS_Store
