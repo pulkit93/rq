@@ -5,7 +5,7 @@
    - `cd redis-3.0.5`
    - `make`
 2. run redis server
-   - redis-server
+   - `redis-server`
 3. install requirements
    - `pip install -r requirements.txt`
 4. run worker
@@ -13,3 +13,6 @@
 5. run app 
    - `python app.py`
 
+## To Test
+1. make a `GET` request to `localhost:5000`
+2. make a `GET` request to `localhost:5000/results/<job_id>`
