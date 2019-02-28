@@ -1,19 +1,22 @@
 
 from rq import Queue
 from rq.job import Job
+from rq.decorators import job
 from worker import conn
 from flask import Flask
+from function import *
 app = Flask(__name__)
 
 q = Queue(connection=conn)
 
-def .add(x, y):
-    return x+y 
+def add(x):
+    return x+x 
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    value = 10
     job = q.enqueue_call(
-    func=add, args=(10,20), result_ttl=5000
+    func=increment, args=(value,), result_ttl=5000
     )
     print(job.get_id())
     return "Added Job "+job.get_id() 
