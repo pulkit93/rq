@@ -7,10 +7,7 @@ from flask import Flask
 from function import *
 app = Flask(__name__)
 
-q = Queue(connection=conn)
-
-def add(x):
-    return x+x 
+q = Queue(connection=conn) 
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
