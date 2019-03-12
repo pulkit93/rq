@@ -4,6 +4,7 @@
    - `tar xzf redis-3.0.5.tar.gz`
    - `cd redis-3.0.5`
    - `make`
+   - `make install`
 2. run redis server
    - `redis-server`
 3. install requirements

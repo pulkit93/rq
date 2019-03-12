@@ -1,5 +1,6 @@
 # redis
 redis-5.0.3
+*.rdb
 
 # pychache
 __pycache__/
